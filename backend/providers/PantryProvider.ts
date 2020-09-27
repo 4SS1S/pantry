@@ -36,7 +36,7 @@ export default class PantryProvider {
     let pantry = await Pantry.findOrFail({ id: data.id })
     pantry = data
 
-    return await pantry
+    return await pantry.save()
   }
 
   public async delete (id: number) {

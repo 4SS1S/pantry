@@ -39,16 +39,15 @@ export default class UserProvider {
   }
 
   public async update (data: User) {
-    return await User.updateOrCreate({ id: data.id }, data)
+    let user = await User.findOrFail({ id: data.id })
+    user = data
+
+    return await user.save()
   }
 
   public async delete (id: number) {
-    return await User.findOrFail({ id })
-      .then(res => {
-        res?.delete()
-      })
-      .catch(err => {
-        throw new Error(err)
-      })
+    let user = await User.findOrFail({ id })
+
+    return await user.delete()
   }
 }
