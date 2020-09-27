@@ -23,7 +23,8 @@
     "@adonisjs/lucid",
     "./providers/UserProvider",
     "./providers/ProvviderProvider",
-    "./providers/BaseProvider"
+    "./providers/BaseProvider",
+    "./providers/PantryProvider"
   ],
   "metaFiles": [
     ".env",
