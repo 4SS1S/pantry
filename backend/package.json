@@ -10,6 +10,8 @@
   "devDependencies": {
     "@adonisjs/assembler": "^2.0.0",
     "@types/socket.io": "^2.1.11",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
     "adonis-preset-ts": "^1.0.4",
     "eslint": "^7.9.0",
     "eslint-plugin-adonis": "^1.0.15",

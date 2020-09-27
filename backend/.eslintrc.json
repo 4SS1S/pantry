@@ -1,5 +1,9 @@
 {
-  "extends": [
-    "plugin:adonis/typescriptApp"
-  ]
+  "extends": ["plugin:adonis/typescriptApp"],
+  "rules": {
+    "@typescript-eslint/quotes": "off",
+    // "semi": ["error", "always"],
+    // "quotes": ["error", "single"],
+    "linebreak-style": ["error", "unix"]
+  }
 }
